@@ -1,6 +1,6 @@
 # React-ReactRouter-Webpack
 react project
-
+```
 ├─.idea
 ├─app                           react目录
 │  ├─components                组件文件夹
@@ -31,19 +31,19 @@ react project
     └─proxy                     数据库操作
 ├─server.js                     react项目入口文件
 └─webpack.config.js             webpack配置文件
+```
 
 
 
-
-first step: 安装全局npm install -g webpack webpack-dev-server nodemon
-再安装package.json的库 npm install
-
-
-react项目启动执行： 本地开发模式启动：webpack-dev-server --progress --colors --config webpack.config.js --port 80 或者执行npm命令:npm run dev-deploy    访问http://localhost
+##First: 
+<pre>安装全局npm install -g webpack webpack-dev-server nodemon，再安装package.json的库 npm install
+1.react项目启动执行： 本地开发模式启动：webpack-dev-server --progress --colors --config webpack.config.js --port 80 或者执行npm命令:npm run dev-deploy    访问http://localhost
                     局域网、外网访问模式:先执行node deploy 再执行 node ./server.js 先执行node deploy 再执行 node start   访问http://localhost:3000
-api项目启动执行(需安装mongodb才能运行)： node ./server/app.js   或 npm run server-start   访问http://localhost:4000
+2.api项目启动执行(需安装mongodb才能运行)： node ./server/app.js   或 npm run server-start   访问http://localhost:4000
+</pre>
 
 
-架构设计思路 ：
- react项目用于显示页面
+# 架构设计思路 ：
+ <pre>react项目用于显示页面
  api项目用于提供react项目所需接口(现和react项目写在同一个项目，但是服务不同。可以另建一个项目,把server文件夹拷过去即可)
+ </pre>
