@@ -43,7 +43,7 @@ react project
 </pre>
 
 
-# 架构设计思路 ：
+# 思路 ：
  <pre>react项目用于显示页面
  api项目用于提供react项目所需接口(现和react项目写在同一个项目，但是服务不同。可以另建一个项目,把server文件夹拷过去即可)
  </pre>
