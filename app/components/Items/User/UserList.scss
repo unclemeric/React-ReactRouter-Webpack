@@ -1,0 +1,38 @@
+.user-list{
+  .header {
+    height: .4rem;
+    padding: 0.3rem 1.6rem;
+    box-sizing: border-box;
+  }
+  ul {
+    list-style: none;
+    li {
+      display: block;
+      font-size: .1rem;
+      margin: .3rem auto;
+      >span {
+        display: inline-block;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      span:nth-child(1) {
+        width: 20%;
+      }
+      span:nth-child(2) {
+        width: 25%;
+      }
+      span:nth-child(3) {
+        width: 35%;
+      }
+      span:nth-child(4) {
+        width:20%;
+      }
+    }
+    li:nth-child(1){
+      font-weight: bold;
+      margin: .2rem auto;
+      font-size: .3rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.order-bar{
+  height: 1.2rem;
+  display: flex;
+  a {
+    flex:3;
+    position: relative;
+    margin-left:.2rem;
+    line-height: .8rem;
+    cursor: pointer;
+  }
+  a.left {
+    text-align: left;
+  }
+  a.right {
+    color:#a39993;
+    text-align: right;
+  }
+  span.arrow {
+    flex:1;
+    text-align: right;
+    position: relative;
+    left:-.23rem;
+    top:.1rem;
+    font-size: .5rem;
+    height: .6rem;
+  }
+  i{
+    top:-.05rem;
+  }
+}

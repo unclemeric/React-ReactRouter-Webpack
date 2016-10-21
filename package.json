@@ -1,0 +1,62 @@
+{
+  "name": "react-reactrouter-webpack",
+  "version": "1.0.0",
+  "description": "react react-router webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-deploy": "webpack-dev-server --progress --colors --config webpack.config.js --port 80",
+    "deploy": "webpack --progress --colors --config webpack.config.js",
+    "start": "nodemon server.js",
+    "server-start": "nodemon ./server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unclemeric/React-ReactRouter-Webpack.git"
+  },
+  "keywords": [
+    "react",
+    "react-router",
+    "webpack"
+  ],
+  "author": "unclemeric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unclemeric/React-ReactRouter-Webpack/issues"
+  },
+  "homepage": "https://github.com/unclemeric/React-ReactRouter-Webpack#readme",
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "lodash": "^4.16.4",
+    "node-sass": "^3.9.0",
+    "path": "^0.12.7",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-router": "^2.7.0",
+    "sass-loader": "^4.0.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.6",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "eventproxy": "^0.3.5",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "log4js": "^0.6.38",
+    "mongoose": "^4.6.3",
+    "serve-favicon": "~2.3.0",
+    "validator": "^6.0.0"
+  }
+}
