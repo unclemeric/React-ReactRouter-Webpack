@@ -12,10 +12,10 @@ class UserCenter extends React.Component {
         return <div>
             <UserHeaderBar />
             <MyOrderBar />
-            <OrderManageBar/>
-            <SettingBar/>
+            <OrderManageBar />
+            <SettingBar />
         </div>
     }
 }
 
-export default UserCenter
+export default UserCenter;

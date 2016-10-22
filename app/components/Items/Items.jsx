@@ -6,10 +6,12 @@ import '../../css/base.scss'
 
 class Items extends React.Component {
     render() {
-        return <div>
-            {this.props.children}
-        </div>
+        return (
+            <div>
+                {this.props.children}
+            </div>
+        )
     }
 }
 
-export default Items
+export default Items;
