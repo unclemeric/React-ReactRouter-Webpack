@@ -5,10 +5,12 @@ import React from 'react'
 
 class ShopCar extends React.Component {
     render() {
-        return <div>
-            ShopCar
-        </div>
+        return (
+            <div>
+                ShopCar
+            </div>
+        )
     }
 }
 
-export default ShopCar
+export default ShopCar;
