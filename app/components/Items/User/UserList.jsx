@@ -19,21 +19,39 @@ class UserList extends React.Component {
     }
     componentDidMount() {
         var that = this;
-        $.ajax({
-            url:App.Config.api_site_prefix+App.API.user.userList,
-            type:'get',
-            dataType:'json',
-            success:function (data) {
-                that.setState({
-                    users:data.users
-                });
-            },
-            error:function () {
-                that.setState({
-                    users:[]
-                });
+        fetch(App.Config.api_site_prefix+App.API.user.userList,
+            {
+                method: "GET",
+                mode: 'cors',
+                cache: 'default'
             }
+            ).then(function(response) {
+            return response.json();
+        }).then(function(json) {
+            that.setState({
+                users:json.users
+            });
+        }).catch(function(e){
+            that.setState({
+                users:[]
+            });
+            console.log(e.message);
         });
+        {/*$.ajax({*/}
+            {/*url:App.Config.api_site_prefix+App.API.user.userList,*/}
+        //     type:'get',
+        //     dataType:'json',
+        //     success:function (data) {
+        //         that.setState({
+        //             users:data.users
+        //         });
+        //     },
+        //     error:function () {
+        //         that.setState({
+        //             users:[]
+        //         });
+        //     }
+        // });
     }
     render() {
         return <div className="user-list">
