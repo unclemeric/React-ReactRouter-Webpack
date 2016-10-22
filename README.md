@@ -46,4 +46,5 @@ react project
 # 思路 ：
  <pre>react项目用于显示页面
  api项目用于提供react项目所需接口(现和react项目写在同一个项目，但是服务不同。可以另建一个项目,把server文件夹拷过去即可)
+ 关于两个项目之间跨域的问题，使用fetch的mode:cors属性可以解决。群友让我试试fetch的cors，于是百度。知乎上看到答案:点击查看(https://www.zhihu.com/question/47029864/answer/104058612)
  </pre>
