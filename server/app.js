@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('log4js');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var config = require('./config');
 
 
 var webRouter = require('./web_router')
@@ -21,7 +22,7 @@ app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, '../public')));
 
 app.all('*', function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Origin", config.clientIp);
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
   res.header("X-Powered-By",' 3.2.1')
@@ -61,10 +62,10 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.listen(80,function (req,res,error) {
+app.listen(config.port,function (req,res,error) {
   if(error){
     logger.error('server error!');
     throw error;
   }
-  console.log('server running on port 80')
+  console.log('server running on port %s',config.port)
 })
